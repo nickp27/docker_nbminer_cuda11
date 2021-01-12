@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.1.0-runtime-ubuntu20.04
+FROM nvidia/cuda:11.1-runtime-ubuntu20.04
 
 MAINTAINER nickp27
 
