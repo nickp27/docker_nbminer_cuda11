@@ -3,7 +3,7 @@ FROM nvidia/cuda:11.1-runtime-ubuntu20.04
 MAINTAINER nickp27
 
 WORKDIR /
-
+ENV DEBIAN_FRONTEND=noninteractive 
 # Package and dependency setup
 RUN apt update -y && apt install -y wget nvidia-settings
 
