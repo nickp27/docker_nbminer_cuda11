@@ -4,7 +4,7 @@ MAINTAINER nickp27
 
 WORKDIR /
 # Package and dependency setup
-RUN apt update -y && apt install -y wget nvidia-settings
+RUN apt update -y && DEBIAN_FRONTEND=noninteractive apt install -y wget nvidia-settings
 
 RUN wget https://github.com/NebuTech/NBMiner/releases/download/v36.1/NBMiner_36.1_Linux.tgz; \
     tar zxvf NBMiner_36.1_Linux.tgz && rm NBMiner_36.1_Linux.tgz; \
