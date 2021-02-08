@@ -7,5 +7,8 @@ To do:
  - amend the Dockerfile to allow for rolling updates
  - provide for environmental variables rather than manual input of algo and pool options
  - compile an UnRaid template
+ - I am currently testing a version with nvidia-settings and xorg for underclocking/overclocking 
+ 
+
  
  Docker Hub link: https://hub.docker.com/r/akkipro27/docker_nbminer_cuda11
