@@ -6,8 +6,8 @@ WORKDIR /
 # Package and dependency setup
 RUN apt update -y && DEBIAN_FRONTEND=noninteractive apt install --no-install-recommends -y wget && rm -rf /var/lib/apt/lists/*
 
-RUN wget https://github.com/NebuTech/NBMiner/releases/download/v36.1/NBMiner_36.1_Linux.tgz; \
-    tar zxvf NBMiner_36.1_Linux.tgz && rm NBMiner_36.1_Linux.tgz; \
+RUN wget https://github.com/NebuTech/NBMiner/releases/download/v37.5/NBMiner_37.5_Linux.tgz; \
+    tar zxvf NBMiner_37.5_Linux.tgz && rm NBMiner_37.5_Linux.tgz; \
     cd NBMiner_Linux; \
     chmod +x ./nbminer; \
     cp ./nbminer /usr/local/bin/nbminer
